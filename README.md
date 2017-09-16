@@ -5,11 +5,12 @@
 ![alt text](https://user-images.githubusercontent.com/31666152/30516091-d9d1aff0-9ae9-11e7-935d-d739525cadb9.jpg "welcome image")
 
 My name is Xinzhe, I am a first year master student in UBC Statistics. **Nice to meet you all!**
+
 In my free time, I like to do the followings:
 - *playing piano*
 - *hiking*
 - *watching movies* 
-   and my favorite movie is **Frozen!**
+
 ![alt text](https://user-images.githubusercontent.com/31666152/30516095-dd614a2c-9ae9-11e7-8b10-c8c1d3473a8e.jpg)
 
 ## Here is a description of how I got the changes into README.md on GitHub.
