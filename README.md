@@ -4,7 +4,7 @@
 
 ![alt text](https://user-images.githubusercontent.com/31666152/30516091-d9d1aff0-9ae9-11e7-935d-d739525cadb9.jpg "welcome image")
 
-My name is Xinzhe, I am a first year master student in UBC Statistics. **Nice to meet you all!**
+My name is Xinzhe, I am a first year master student in UBC Statistics. **Nice to meet you all!** :blush:
 
 In my free time, I like to do the followings:
 - *playing piano*
@@ -15,8 +15,16 @@ In my free time, I like to do the followings:
 
 ## Here is a description of how I got the changes into README.md on GitHub.
 - I pulled, edited locally, saved, committed, pushed to github.com.
+
+      + Pull from GitHub
+      + Make changes locally to local files using RStudio
+      + Save the changes.
+      + Commit the changes to repo.
+      + Push the commit to GitHub
+
 - I referred to [this tutorial](http://solutionoptimist.com/2013/12/28/awesome-github-tricks/) when I tried to add images and gif to the README file.
 
+- I also find [this website](https://help.github.com/articles/github-glossary/) helpful, it explains many terminologies used in github.
 
 Here is a [Link to the main STAT545 webpagepage](http://stat545.com/).
 
