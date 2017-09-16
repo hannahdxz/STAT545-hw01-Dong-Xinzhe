@@ -4,6 +4,8 @@
 
 ![alt text](https://user-images.githubusercontent.com/31666152/30516091-d9d1aff0-9ae9-11e7-935d-d739525cadb9.jpg "welcome image")
 
+
+### A brief self-introduction
 My name is Xinzhe, I am a first year master student in UBC Statistics. **Nice to meet you all!** :blush:
 
 In my free time, I like to do the followings:
