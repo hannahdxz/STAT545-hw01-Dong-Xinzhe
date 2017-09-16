@@ -13,7 +13,7 @@ In my free time, I like to do the followings:
 
 ![alt text](https://user-images.githubusercontent.com/31666152/30516095-dd614a2c-9ae9-11e7-8b10-c8c1d3473a8e.jpg)
 
-## Here is a description of how I got the changes into README.md on GitHub.
+### Here is a description of how I got the changes into README.md on GitHub.
 - I pulled, edited locally, saved, committed, pushed to github.com.
 
        1. Pull from GitHub
@@ -26,7 +26,7 @@ In my free time, I like to do the followings:
 
 - I also find [this website](https://help.github.com/articles/github-glossary/) helpful, it explains many terminologies used in github.
 
-Here is a [Link to the main STAT545 webpagepage](http://stat545.com/).
+Here is [a Link to the main STAT545 webpagepage](http://stat545.com/).
 
 Thank you for visiting my website. Have a good day!
 
