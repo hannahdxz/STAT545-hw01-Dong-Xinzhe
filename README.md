@@ -15,7 +15,6 @@ In my free time, I like to do the followings:
 
 ## Here is a description of how I got the changes into README.md on GitHub.
 - I pulled, edited locally, saved, committed, pushed to github.com.
-
       + Pull from GitHub
       + Make changes locally to local files using RStudio
       + Save the changes.
