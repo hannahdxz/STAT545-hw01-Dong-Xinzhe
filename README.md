@@ -17,9 +17,13 @@ In my free time, I like to do the followings:
 - I pulled, edited locally, saved, committed, pushed to github.com.
 
      *1. Pull from GitHub*
+     
      *2. Make changes locally to local files using RStudio*
+     
      *3. Save the changes*
+     
      *4. Commit the changes to repo*
+     
      *5. Push the commit to GitHub*
  
 - I referred to [this tutorial](http://solutionoptimist.com/2013/12/28/awesome-github-tricks/) when I tried to add images and gif to the README file.
