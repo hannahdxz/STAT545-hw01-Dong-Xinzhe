@@ -28,8 +28,20 @@ In my free time, I like to do the followings:
 
 - I also find [this website](https://help.github.com/articles/github-glossary/) helpful, it explains many terminologies used in github.
 
-Here is [a Link to the main STAT545 webpagepage](http://stat545.com/).
+### Some reflections on the experience with R Markdown
+Here is [a link](https://github.com/hannahdxz/STAT545-hw01-Dong-Xinzhe/blob/master/hw01_gapminder.md) to the rendered hw01_gapminder.md for the Gapminder exploration.
+- First I opened a new Rmarkdown file through *File > New File > R Markdown …*
+- Change the output in YAML to "github_document"
+- Insert empty R chunks, via “Insert > R” in upper right of Rstudio
+- Insert code to the empty R chunks
+- Make comments and explanation about each R chunk
+- Render the whole document via "Knit"
+- Commit the changes and push to Github
 
-Thank you for visiting my website. Have a good day!
+Our [course website](http://stat545.com/block007_first-use-rmarkdown.html) contains more instructions on Rmarkdown. Also the [Rstudio website](http://rmarkdown.rstudio.com/lesson-1.html) has a detailed tutorial about Rmarkdown which I find very useful.
+
+Here is a Link to the main [STAT545 webpage](http://stat545.com/).
+
+Thank you for visiting my README. Have a good day!
 
 ![](https://user-images.githubusercontent.com/31666152/30516094-dbf6a92a-9ae9-11e7-9842-3f6111a26bac.gif)
