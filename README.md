@@ -33,7 +33,7 @@ In my free time, I like to do the followings:
 ### A few reflections on my experience with Markdown
 - I read up on Markdown and practiced with some of the syntax, including section headers, links, bold, italic, bullet points, image, and gif embed.
 
-- Here is a [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) of Markdown.
+- Here is a [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) of Markdown. I find it very useful and clear.
 
 - I referred to [this tutorial](http://solutionoptimist.com/2013/12/28/awesome-github-tricks/) when I tried to add images and gif to the README file.
 
@@ -50,7 +50,7 @@ In my free time, I like to do the followings:
        6. Render the whole document via "Knit"
        7. Commit the changes and push to Github
 
-- Our [course website](http://stat545.com/block007_first-use-rmarkdown.html) contains more instructions on Rmarkdown. Also the [Rstudio website](http://rmarkdown.rstudio.com/lesson-1.html) has a detailed tutorial about Rmarkdown which I find very useful.
+- Our [course website](http://stat545.com/block007_first-use-rmarkdown.html) contains more instructions on Rmarkdown. Also the [Rstudio website](http://rmarkdown.rstudio.com/lesson-1.html) has a detailed tutorial about Rmarkdown.
 
 Here is a Link to the main [STAT545 webpage](http://stat545.com/).
 
