@@ -29,7 +29,7 @@ In my free time, I like to do the followings:
 - I also find [this website](https://help.github.com/articles/github-glossary/) helpful, it explains many terminologies used in github.
 
 ### Some reflections on the experience with R Markdown
-Here is [a link](https://github.com/hannahdxz/STAT545-hw01-Dong-Xinzhe/blob/master/hw01_gapminder.md) to the rendered hw01_gapminder.md for the Gapminder exploration.
+Here is a link to the rendered [hw01_gapminder.md](https://github.com/hannahdxz/STAT545-hw01-Dong-Xinzhe/blob/master/hw01_gapminder.md) for the Gapminder exploration.
 - First I opened a new Rmarkdown file through *File > New File > R Markdown …*
 - Change the output in YAML to "github_document"
 - Insert empty R chunks, via “Insert > R” in upper right of Rstudio
