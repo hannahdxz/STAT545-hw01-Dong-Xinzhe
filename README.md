@@ -24,7 +24,7 @@ In my free time, I like to do the followings:
        4. Commit the changes to repo
        5. Push the commit to GitHub
 
-- I mostly referred to our [course website]http://stat545.com/cm003-notes_and_exercises.html when working on Github, connecting RStudio to git and GitHub, and working locally.
+- I mostly referred to our [course website](http://stat545.com/cm003-notes_and_exercises.html) when working on Github, connecting RStudio to git and GitHub, and working locally.
 
 - One of the difficult thing that I notice about working on Githubs is the terminologies. Many of the words are new to me and I sometimes have difficulty understanding the instructions because of these words. 
 
