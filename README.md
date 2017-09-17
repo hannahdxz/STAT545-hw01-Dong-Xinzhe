@@ -23,12 +23,21 @@ In my free time, I like to do the followings:
        3. Save the changes
        4. Commit the changes to repo
        5. Push the commit to GitHub
- 
+
+- I mostly referred to our [course website]http://stat545.com/cm003-notes_and_exercises.html when working on Github, connecting RStudio to git and GitHub, and working locally.
+
+- One of the difficult thing that I notice about working on Githubs is the terminologies. Many of the words are new to me and I sometimes have difficulty understanding the instructions because of these words. 
+
+- I find [this website](https://help.github.com/articles/github-glossary/) helpful, it explains many terminologies used in github.
+
+### A few reflections on my experience with Markdown
+- I read up on Markdown and practiced with some of the syntax, including section headers, links, bold, italic, bullet points, image, and pdf embed.
+
+- Here is a [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) of Markdown.
+
 - I referred to [this tutorial](http://solutionoptimist.com/2013/12/28/awesome-github-tricks/) when I tried to add images and gif to the README file.
 
-- I also find [this website](https://help.github.com/articles/github-glossary/) helpful, it explains many terminologies used in github.
-
-### Some reflections on the experience with R Markdown
+### Some reflections on the experience with R Markdown for Gapminder exploration
 Here is a link to the rendered [hw01_gapminder.md](https://github.com/hannahdxz/STAT545-hw01-Dong-Xinzhe/blob/master/hw01_gapminder.md) for the Gapminder exploration.
 - First I opened a new Rmarkdown file through *File > New File > R Markdown …*
 - Change the output in YAML to "github_document"
