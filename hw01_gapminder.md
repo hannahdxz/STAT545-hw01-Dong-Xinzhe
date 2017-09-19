@@ -4,6 +4,9 @@ Xinzhe Dong
 September 16, 2017
 
 Get an overview of the gapminder dataframe
+------------------------------------------
+
+#### 1. Get the Gapminder data
 
 ``` r
 library(gapminder)
@@ -18,7 +21,7 @@ str(gapminder)
     ##  $ pop      : int  8425333 9240934 10267083 11537966 13079460 14880372 12881816 13867957 16317921 22227415 ...
     ##  $ gdpPercap: num  779 821 853 836 740 ...
 
-Print gapminder to screen
+#### 2. Print gapminder to screen
 
 ``` r
 library(tidyverse)
@@ -55,7 +58,7 @@ gapminder
     ## 10 Afghanistan      Asia  1997  41.763 22227415  635.3414
     ## # ... with 1,694 more rows
 
-A statistical overview obtained with summary()
+#### 3. A statistical overview of gapminder data
 
 ``` r
 summary(gapminder)
@@ -78,62 +81,148 @@ summary(gapminder)
     ##  Max.   :1.319e+09   Max.   :113523.1  
     ## 
 
-Some basic plots
+#### 4. Understand the basic extent of the data frame: number of rows and columns.
+
+``` r
+ncol(gapminder)
+```
+
+    ## [1] 6
+
+``` r
+nrow(gapminder)
+```
+
+    ## [1] 1704
+
+#### 5. Some basic plots
 
 ``` r
 plot(lifeExp ~ year, gapminder)
 ```
 
-![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-1.png)
+![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-1.png)
 
 ``` r
 plot(lifeExp ~ gdpPercap, gapminder)
 ```
 
-![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-2.png)
+![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-2.png)
 
 ``` r
 plot(lifeExp ~ log(gdpPercap), gapminder)
 ```
 
-![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-3.png)
+![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-3.png)
+
+``` r
+plot(lifeExp ~ pop, gapminder)
+```
+
+![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-4.png)
+
+Look at the variables inside a data frame
+-----------------------------------------
+
+#### 1. Life expectancy is a numeric variable.
+
+``` r
+head(gapminder$lifeExp)
+```
+
+    ## [1] 28.801 30.332 31.997 34.020 36.088 38.438
+
+``` r
+summary(gapminder$lifeExp)
+```
+
+    ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    ##   23.60   48.20   60.71   59.47   70.85   82.60
+
+``` r
+hist(gapminder$lifeExp)
+```
+
+![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-6-1.png)
+
+#### 2. The year variable is an integer variable.
+
+``` r
+summary(gapminder$year)
+```
+
+    ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    ##    1952    1966    1980    1980    1993    2007
+
+``` r
+table(gapminder$year)
+```
+
+    ## 
+    ## 1952 1957 1962 1967 1972 1977 1982 1987 1992 1997 2002 2007 
+    ##  142  142  142  142  142  142  142  142  142  142  142  142
+
+#### 3. The variable continent is a categorical variable, which is stored as a factor in R.
+
+``` r
+class(gapminder$continent)
+```
+
+    ## [1] "factor"
+
+``` r
+summary(gapminder$continent)
+```
+
+    ##   Africa Americas     Asia   Europe  Oceania 
+    ##      624      300      396      360       24
+
+``` r
+levels(gapminder$continent)
+```
+
+    ## [1] "Africa"   "Americas" "Asia"     "Europe"   "Oceania"
 
 ``` r
 barplot(table(gapminder$continent))
 ```
 
-![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-4-4.png)
+![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-8-1.png)
 
-Exploit the fact that ggplot2 was installed and loaded via the tidyverse
-
-``` r
-p <- ggplot(filter(gapminder, continent != "Oceania"),
-            aes(x = gdpPercap, y = lifeExp)) # just initializes
-p <- p + scale_x_log10() # log the x axis the right way
-p + geom_point() # scatterplot
-```
-
-![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-1.png)
+#### 4. The variable country is also a categorical variable.
 
 ``` r
-p + geom_point(aes(color = continent)) # map continent to color
+class(gapminder$country)
 ```
 
-![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-2.png)
+    ## [1] "factor"
 
 ``` r
-p + geom_point(alpha = (1/3), size = 3) + geom_smooth(lwd = 3, se = FALSE)
+nlevels(gapminder$country)
 ```
 
-    ## `geom_smooth()` using method = 'gam'
+    ## [1] 142
 
-![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-3.png)
+#### 5. The pop variable is an integer variable.
 
 ``` r
-p + geom_point(alpha = (1/3), size = 3) + facet_wrap(~ continent) +
-  geom_smooth(lwd = 1.5, se = FALSE)
+summary(gapminder$pop)
 ```
 
-    ## `geom_smooth()` using method = 'loess'
+    ##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+    ## 6.001e+04 2.794e+06 7.024e+06 2.960e+07 1.959e+07 1.319e+09
 
-![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-4.png)
+#### 6. gdpPercap is a numeric variable.
+
+``` r
+summary(gapminder$gdpPercap)
+```
+
+    ##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+    ##    241.2   1202.0   3532.0   7215.0   9325.0 113500.0
+
+``` r
+hist(gapminder$gdpPercap)
+```
+
+![](hw01_gapminder_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-11-1.png)

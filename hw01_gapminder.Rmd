@@ -6,41 +6,76 @@ output:
   github_document
 ---
 
-Get an overview of the gapminder dataframe
+##Get an overview of the gapminder dataframe
+####1. Get the Gapminder data
 ```{r}
 library(gapminder)
 str(gapminder)
 ```
 
-Print gapminder to screen
+####2. Print gapminder to screen
 ```{r}
 library(tidyverse)
 gapminder
 ```
 
-A statistical overview obtained with summary()
+####3. A statistical overview of gapminder data
 ```{r}
 summary(gapminder)
 ```
 
-Some basic plots
+####4. Understand the basic extent of the data frame: number of rows and columns.
+```{r}
+ncol(gapminder)
+nrow(gapminder)
+```
+
+####5. Some basic plots
 ```{r}
 plot(lifeExp ~ year, gapminder)
 plot(lifeExp ~ gdpPercap, gapminder)
 plot(lifeExp ~ log(gdpPercap), gapminder)
+plot(lifeExp ~ pop, gapminder)
+
+```
+
+##Look at the variables inside a data frame
+####1. Life expectancy is a numeric variable.
+```{r}
+head(gapminder$lifeExp)
+summary(gapminder$lifeExp)
+hist(gapminder$lifeExp)
+```
+
+####2. The year variable is an integer variable.
+```{r}
+summary(gapminder$year)
+table(gapminder$year)
+
+```
+
+####3. The variable continent is a categorical variable, which is stored as a factor in R.
+```{r}
+class(gapminder$continent)
+summary(gapminder$continent)
+levels(gapminder$continent)
 barplot(table(gapminder$continent))
 
 ```
 
-Exploit the fact that ggplot2 was installed and loaded via the tidyverse
+####4. The variable country is also a categorical variable. 
 ```{r}
-p <- ggplot(filter(gapminder, continent != "Oceania"),
-            aes(x = gdpPercap, y = lifeExp)) # just initializes
-p <- p + scale_x_log10() # log the x axis the right way
-p + geom_point() # scatterplot
-p + geom_point(aes(color = continent)) # map continent to color
-p + geom_point(alpha = (1/3), size = 3) + geom_smooth(lwd = 3, se = FALSE)
-p + geom_point(alpha = (1/3), size = 3) + facet_wrap(~ continent) +
-  geom_smooth(lwd = 1.5, se = FALSE)
+class(gapminder$country)
+nlevels(gapminder$country)
 ```
 
+####5. The pop variable is an integer variable.
+```{r}
+summary(gapminder$pop)
+```
+
+####6. gdpPercap is a numeric variable.
+```{r}
+summary(gapminder$gdpPercap)
+hist(gapminder$gdpPercap)
+```
